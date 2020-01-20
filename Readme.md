@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Julia Ivanova](https://up.htmlacademy.ru/htmlcss/27/user/381761).
-* Наставник: `Неизвестно`.
+* Наставник: [Валерия Кожевникова](https://htmlacademy.ru/profile/id702559).
 
 ---
 
