@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="site-navigation">
         <a href="">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта студии «Нёрдс»">
         </a>
@@ -16,7 +19,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <img src="img/cart-icon.svg" alt="Изображение корзины">
+        <img src="img/cart-icon.svg" alt="Корзина">
         <a href="basket.html">Корзина</a>
       </nav>
     </header>
@@ -27,24 +30,56 @@
       <section>
         <h2 class="visually-hidden">Фильтры</h2>
 
-        <h3>Стоимость</h3>
-        <!-- Форма -->
+          <legend class="filter-title">Стоимость:</legend>
+            <!-- Фильтр слайдер -->
 
-        <h3>Сетка</h3>
-        <ul>
-          <li><img src="img/radio-on.svg" width="25" height="25" alt="">Адаптивная</li>
-          <li><img src="img/radio-off.svg" width="25" height="25" alt="">Фиксированная</li>
-          <li><img src="img/radio-off.svg" width="25" height="25" alt="">Резиновая</li>
-        </ul>
-        <h3>Особенности</h3>
-        <ul>
-          <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Слайдер</li>
-          <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Блок преимуществ</li>
-          <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Новости</li>
-          <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Галерея</li>
-          <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Корзина</li>
-        </ul>
-        <button class="button">Показать</button>
+            <!-- Фильтр сетка -->
+        <fieldset class="filter-grid">
+          <legend class="filter-title">Сетка:</legend>
+            <ul class="grid-list">
+              <li>
+                <input type="radio" id="grid-adaptive" name="grid" value="adaptive" checked="">
+                <label for="grid-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" id="grid-fixed" name="grid" value="fixed">
+                <label for="grid-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" id="grid-rubber" name="grid" value="rubber">
+                <label for="grid-rubber">Резиновая</label>
+              </li>
+            </ul>
+        </fieldset>
+
+            <!-- Фильтр особенности -->
+        <fieldset class="filter-features">
+          <legend class="filter-title">Особенности:</legend>
+          <ul class="features-list">
+            <li class="filter-option filter-checkbox">
+              <input type="checkbox" name="slider" id="features-slider" checked="">
+              <label for="features-slider">Слайдер</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input type="checkbox" name="advantages-block" id="features-advantages-block">
+              <label for="features-advantages-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input type="checkbox" name="news" id="features-news" checked="">
+              <label for="features-news">Новости</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input type="checkbox" name="gallery" id="features-gallery" >
+              <label for="features-gallery" >Галерея</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input type="checkbox" name="basket" id="features-basket">
+              <label for="features-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+
+          <button type="submit" class="button">Показать</button>
       </section>
 
       <section>
@@ -66,9 +101,9 @@
             <a href="">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта «Седона»">
             </a>
-            <span>SEDONA</span>
+            <span class="brand">SEDONA</span>
             <span>Информационный сайт для туристов</span>
-            <a href="">9900 руб.</a>
+            <a href="" class="button">9900 руб.</a>
           </li>
           <li>
             <h3 class="visually-hidden">Шаблон сайта «Пинк»</h3>
@@ -119,25 +154,27 @@
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="">Напишите нам</a>
+          <a href="" class="button">Напишите нам</a>
         </div>
         <img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <img src="img/map-marker.png" width="231" height="190" alt="Нёрдс на карте">
       </section>
 
-      <section>
+      <section class="page-footer">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        <ul class="social-list">
+          <li class="social-button vk"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+          <li class="social-button fb"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li class="social-button insta"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
         </ul>
+        <div class="friends-discount">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
 
-    <section>
+    <section class="modal-message">
       <h2>Напишите нам</h2>
 
       <form action="https://echo.htmlacademy.ru" method="post">

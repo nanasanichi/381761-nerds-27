@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="site-navigation">
         <a href="">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта студии «Нёрдс»">
         </a>
@@ -27,30 +30,30 @@
       <div>
         <b>Долго, дорого, скрупулезно.</b>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="">Узнать больше</a>
+        <a href="" class="button">Узнать больше</a>
         <img src="img/slide1.png" width="698" height="413" alt="Слайдер">>
       </div>
 
-      <section>
+      <section class="advantages">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul>
-          <li>
+        <ul class="advantages-list">
+          <li class="advantages-item">
             <h3>Веб-сайты</h3>
             <img src="img/advantage-picture-red.jpg" width="300" height="146" alt="Создание веб-сайтов">
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="">Заказать</a>
+            <a href="" class="button">Заказать</a>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3>Приложения</h3>
             <img src="img/advantage-picture-green.jpg" width="300" height="146" alt="Создание приложений">
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="">Заказать</a>
+            <a href="" class="button">Заказать</a>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3>Презентации</h3>
             <img src="img/advantage-picture-yellow.jpg" width="300" height="146" alt="Создание презентаций">
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href="">Заказать</a>
+              <a href="" class="button">Заказать</a>
           </li>
         </ul>
       </section>
@@ -105,25 +108,27 @@
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="">Напишите нам</a>
+          <a href="" class="button">Напишите нам</a>
         </div>
         <img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <img src="img/map-marker.png" width="231" height="190" alt="Нёрдс на карте">
       </section>
 
-      <section>
+      <section class="page-footer">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        <ul class="social-list">
+          <li class="social-button vk"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+          <li class="social-button fb"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li class="social-button insta"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
         </ul>
+        <div class="friends-discount">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
 
-    <section>
+    <section class="modal-message">
       <h2>Напишите нам</h2>
 
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -136,7 +141,7 @@
         <button type="submit">Отправить</button>
       </form>
 
-      <button type="button">Закрыть</button>
+      <button type="button" class="button">Закрыть</button>
 
     </section>
   </body>
