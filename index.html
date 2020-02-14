@@ -8,23 +8,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="site-navigation">
-        <a href="">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта студии «Нёрдс»">
-        </a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <img src="img/cart-icon.svg" alt="Корзина">
-        <a href="basket.html">Корзина</a>
+    <header class="main-header">
+      <nav class="main-navigation container">
+        <div class="wrapper">
+          <a href="" class="main-navigation-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта студии «Нёрдс»">
+          </a>
+          <ul class="page-navigation">
+            <li class="main-navigation-link"><a href="#">Студия</a></li>
+            <li class="main-navigation-link"><a href="#">Клиенты</a></li>
+            <li class="main-navigation-link"><a href="catalog.html">Магазин</a></li>
+            <li class="main-navigation-link"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <img src="img/cart-icon.svg" alt="Корзина">
+              <a href="basket.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Сайт студии «Нёрдс»</h1>
 
       <div>
